@@ -1,8 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <map>
 using namespace std;
-
-
-
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -20,12 +19,17 @@ public:
         
     }
 };
+    // Write C++ code here
+    
 
 int main(){
 
-    vector<int> nums={2,7,11,15};
-    int target = 9;
+    vector<int> nums={3,2,4};
+    int target = 6;
     Solution s;
-    s.twoSum(nums, target);
+    vector<int> ans = s.twoSum(nums, target);
+    for(int i = 0; i < ans.size(); i++){
+        cout<<ans[i];
+    }
     return 0;
 }
